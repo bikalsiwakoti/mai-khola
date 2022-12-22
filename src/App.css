@@ -1,0 +1,95 @@
+.Page {
+  width: 100%;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.buttons {
+  display: flex;
+  width: 51.6%;
+  margin: auto;
+
+}
+
+/* .charts {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex: 1;
+} */
+.rightCharts{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+.leftCharts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* Colors for the bar */
+.colors{
+  position: absolute;
+  top:10vh;
+  right:348px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1400px) {
+  .colors{
+    right:390px;
+  }
+}
+
+
+.grey {
+  background-color: #D3D3D3;
+  width: 8px;
+  height: 7.8vh;
+}
+.blue {
+  background: linear-gradient(to top, #808080 ,#03a9f4);
+  width: 8px;
+  height: 7.8vh;
+}
+
+.green {
+  background-color: #66ff00;
+  width: 8px;
+  height: 7.8vh;
+}
+.yellow {
+  background-color: #FFFF00;
+  width: 8px;
+  height: 7.8vh;
+}
+.orange {
+  background-color: #FFA500;
+  width: 8px;
+  height: 7.8vh;
+}
+.red{
+  background: linear-gradient(to top, #FF0000 ,#8B0000);
+  width: 7px;
+  height: 7.8vh;
+}
+
+.colors span {
+  margin-left: 13px;
+}
+.active {
+  background-color: rgba(45, 24, 24, 0.385);
+
+}
